@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu</title>
+    <meta name="title" content="The Hindu" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.thehindu.com/favicon.ico" />
+    <link rel="icon" type="image/ico" href="https://www.thehindu.com/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script type="text/javascript">
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+              var file = $(this).data('include')
+              $(this).load(file)
+            });
+        });
+        $(document).ready(function(){
+            $(".tab-listing .secondary-btn").on('click', function(event) {
+                document.getElementById("other-brands").scrollIntoView({
+                   behavior: 'smooth'
+                });
+            });
+        }); 
+    </script> 
+</head>
+<body>
+    <div data-include="header.html" ></div>
+    <h1 class="section-title main-text">Our Publications</h1>
+    <section>
+        <div class="container tab-listing">
+            <div class="row">
+                <div class="tab-listing-btn variation1">
+                    <button class="primary-btn active">
+                        Publications
+                    </button>
+                    <button class="secondary-btn">Other Brands</button>
+                </div>
+                <div class="col-xl-12 tab-listing-icons">
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://www.thehindu.com/" target="_blank"><img src="./assets/images/th-logo.svg" alt="hindu-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://www.thehindubusinessline.com/" target="_blank"><img src="./assets/images/bl-logo.svg" alt="businessline-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://frontline.thehindu.com/" target="_blank"><img src="./assets/images/fl-logo.svg" alt="frontline-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                           <a href="https://sportstar.thehindu.com/" target="_blank"> <img src="./assets/images/sport-star.svg" alt="Sporstar-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://ywepaper.thehindu.com/login" target="_blank"><img src="./assets/images/yw.svg" alt="young-world-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                          <a href="https://eschool.thehindu.com/login"> <img src="./assets/images/th-school.png" alt="inschool-logo"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-listing-btn" id="other-brands">
+                    <button class="primary-btn active">Other Brands</button>
+                </div>
+                <div class="col-xl-12 tab-listing-icons">
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://ywc.thehindu.com/" target="_blank"><img src="./assets/images/ywcl-logo.svg" alt="ywclub-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://thehinduimages.com/" target="_blank"><img src="./assets/images/thimages-logo.svg" alt="hindu-image-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://www.hindutamil.in/" target="_blank"><img src="./assets/images/hindu-isai.svg" alt="hindu-tamil-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://www.thehinducentre.com/" target="_blank"><img src="./assets/images/hel-cen-logo.svg" alt="health-care-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://step.thehindu.com/" target="_blank"><img src="./assets/images/step-logo.svg" alt="step-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://crossword.thehindu.com/" target="_blank"><img src="./assets/images/crossword.svg" alt="Crossword-logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 tab-listing-icons">
+                    <div class="col-xl-2 col-6 col-sm-4 logo-list">
+                        <div class="picture">
+                            <a href="https://publications.thehindugroup.com/bookstore/bookspaymlist.jsp?mlist=SURF_DIVE" target="_blank"><img src="./assets/images/surf.png " alt="surf-drive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div data-include="footer.html" ></div>
+     
+</body>
+
+
+</html>

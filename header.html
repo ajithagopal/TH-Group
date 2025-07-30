@@ -1,0 +1,80 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+           $(".menu-btn").click(function () {
+               $(this).toggleClass('opened');
+               $('.header').toggleClass('opened');
+           });
+           var offset1 = $(".header-end").outerHeight();
+           //var offset2 = $(".header").outerHeight();
+           //var offset3 = $(".header").offset().top;
+
+           var currentScrollPos = window.pageYOffset;
+           $(this).scroll(function() {
+               if ($(window).scrollTop() <  offset1){
+                   $(".header").removeClass("header-move");
+               }
+           });
+           $(this).scroll(function() {
+               if ($(this).scrollTop() > offset1 + 10) {
+                   var currentScrollPos = window.pageYOffset;
+                   if (prevScrollpos > currentScrollPos) {
+                       $(".header").addClass("header-move");
+                       $(".header").css("transform", "translateY(0px)");
+                   } else {
+                       if($( window ).width() > 1040){
+                           $(".header").css("transform", "translateY(-250px)");
+                       }
+                       else{
+                           $(".header").css("transform", "translateY(-100px)");
+                       }
+                       
+                   }                    
+                   prevScrollpos = currentScrollPos;
+               }
+               else if ($(this).scrollTop() < offset1 + 10){
+                   $(".header").css("transform", "translateY(0px)");
+               }
+               prevScrollpos = window.pageYOffset;
+
+           });
+       });
+</script>
+<header class="header">
+       <div class="container">
+           <div class="main-menu">
+               <div class="left-menu hide-mobile">
+                   <a href="about-us.html">ABOUT US</a>
+                   <a href="publications.html">PUBLICATIONS</a>
+                   <a href="events.html">EVENTS</a>
+                   <a href="people.html">PEOPLE</a>
+               </div>
+               <div class="main-logo">
+                   <a href="index.html">
+                       <img src="./assets/images/logo.gif" alt="The Hindu">
+                   </a>
+               </div>
+               <div class="right-menu hide-mobile">
+                   <a href="books.html">BOOKS</a>
+                   <a href="subscription.html">SUBSCRIPTION</a>
+                   <a href="advertising.html">ADVERTISING</a>
+                   <a href="contact.html">CONTACTS</a>
+               </div>
+               <div class="menu-btn hide-system">
+                   <img class="menu-hamber" src="https://assetsth.thehindu.co.in/theme/images/th-online/menu-hamber-icon.svg" alt="HamberMenu">
+               </div>
+           </div>
+           <div class="mobile-menu hide-system">
+               <ul class="menu">
+                   <li><a href="about-us.html">ABOUT US</a></li>
+                   <li><a href="publications.html">PUBLICATIONS</a></li>
+                   <li><a href="events.html">EVENTS</a></li>
+                   <li><a href="people.html">PEOPLE</a></li>
+                   <li><a href="books.html">BOOKS</a></li>
+                   <li><a href="subscription.html">SUBSCRIPTION</a></li>
+                   <li><a href="advertising.html">ADVERTISING</a></li>
+                   <li><a href="contact.html">CONTACTS</a></li>
+               </ul>
+           </div>
+       </div>
+   </header>
+   <div class="header-end"></div>
